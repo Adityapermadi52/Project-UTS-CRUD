@@ -9,14 +9,14 @@ if (isset($_POST["submit"])) {
     echo " 
                     <script>
                             alert('Data Berhasil Di Edit !' );
-                            document.location.href = 'index1.php';
+                            document.location.href = 'datapengunjung.php';
                     </script>
             ";
   } else {
     echo " 
             <script>
                     alert('Data Gagal Di Edit !' );
-                    document.location.href = 'index1.php';
+                    document.location.href = 'datapengunjung.php';
             </script>
             ";
   }

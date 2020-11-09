@@ -10,8 +10,8 @@ if (isset($_POST['update'])) {
     WHERE id='$_POST[id]'
     ");
     if ($updateSql) {
-        echo "<script type='text/javascript'>alert('Data Berhasil diedit...!'); location.href=\"index1.php\";</script>";
+        echo "<script type='text/javascript'>alert('Data Berhasil diedit...!'); location.href=\"datapengunjung.php\";</script>";
     } else {
-        echo "<script type='text/javascript'>alert('Data Gagal diedit...!'); location.href=\"index1.php\";</script>";
+        echo "<script type='text/javascript'>alert('Data Gagal diedit...!'); location.href=\"datapengunjung.php\";</script>";
     }
 }

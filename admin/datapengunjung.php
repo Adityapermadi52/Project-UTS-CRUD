@@ -4,7 +4,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,16 +30,10 @@ session_start();
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../companyprofil/home.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datapengunjung">Data Pengunjung</a></li>
             </ul>
         </div>
     </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- Home-->
-        <section class="resume-section" id=".../companyprofil/home.php"></section>
-        <hr class="m-0" />
         <!-- Data Pengunjung-->
         <section class="resume-section" id="datapengunjung">
             <div class="resume-section-content">

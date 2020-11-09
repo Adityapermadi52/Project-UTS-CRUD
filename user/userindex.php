@@ -3,115 +3,226 @@
     session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en" id="home">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Toya Bungkah</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styleuser.css" rel="stylesheet" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Toya Bungkah</title>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Toya Bungkah Kintemani</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/aditya.jpeg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#userdatapengunjung">User Data Pengunjung</a></li>
-                </ul>
+
+    <body>
+
+<!-- navbar -->
+    <div class="navbar-fixed">
+          <nav class="blue darken-4">
+           <div class="container">
+        <div class="nav-wrapper">
+           <a href="#home" class="brand-logo">Toya Bungkah</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#About">About</a></li>
+            <li><a href="datauser.php">Data Pengunjung</a></li>
+            <li><a href="#Facilitas">Facilitas</a></li>
+            <li><a href="#Porfolio">Porfolio</a></li>
+            <li><a href="#Contactus">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </div>
+
+
+    <!-- sidenav -->
+     <ul class="sidenav" id="mobile-nav">
+      <li><a href="#About">About</a></li>
+      <li><a href="#Facilitas">Facilitas</a></li>
+      <li><a href="#Porfolio">Porfolio</a></li>
+      <li><a href="#Contactus">Contact us</a></li>
+
+     </ul>
+      
+    <!-- silider -->
+    <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider/toyabungkah.jpg"> 
+        <div class="caption left-align">
+          <h3>"Selamat Datang"</h3>
+          <h4>Di Toya Bungkah</h4>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/slider/toyabungkah1.jpg"> 
+        <div class="caption right-align">
+          <h3>"Selamat Datang"</h3>
+          <h4>Di Toya Bungkah</h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+      <!-- About -->
+      <section class="About" id="About" >
+        <div class="container">
+          <div class="row">
+            <h3 class="center light grey-text text-darken-3">About</h3>
+            <div class="col m6 light">
+              <h5>Toya Bungkah Kintemani</h5>
+              <p align="justify" class="lead mb-5">Batur Natural Hot Spring menjadi salah satu tempat wisata pemandian air panah
+                yang cukup populer di pulau Dewata Bali. Memang terdapat sejumlah pemandian air panas di Bali, sekaligus menawarkan
+                sebuah pemandangan indah yang memanjakan dan memikat mata pengunjungnya, selain bisa menyegarkan tubuh juga menrefresh pikiran anda,
+                melepaskan segala penat, menenggelamkan kejenuhan, sehingga menambah kesegaran tubuh untuk aktifitas berikutnya.
+                Batur Natural Hot Spring di desa Toya Bungkah dikelola secara profesional oleh desa Pekraman Batur, sehingga anda
+                bisa merasa nyaman, aman dan tenang untuk berada di lokasi, walaupun untuk masuk ke tempat pemandian ini dikenakan tiket masuk,
+                hanya sebesar Rp 60.000/orang/WNI, harga tiket ini cukup masuk akal apalagi dengan berbagai fasilitas yang di dapatkan pengunjung seperti welcome drink, sampo, sabun dan handuk.
+                Sehingga pemandian di desa Toya Bungkah menjadi tempat lebih ideal untuk berendam dibandingkan di tempat pemandian umum.
+            </p><br>
+          </div>
+          <div class="col m6 light">
+            <p>Pengunjung</p>
+            <div class="progress">
+              <div class="determinate" style="width: 90%"></div>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- Home-->
-            <section class="resume-section" id="home">
-                <div class="resume-section-content">
-                    <h2 class="mb-0">
-                    Toya Bungkah
-                        <span class="text-primary">Kintemani</span>
-                    </h2>
-                    <img src="../img/toyabungkah.jpg" width=500px; height=250px;   alt="">
-                    <p align="justify" class="lead mb-5">Batur Natural Hot Spring menjadi salah satu tempat wisata pemandian air panah 
-                        yang cukup populer di pulau Dewata Bali. Memang terdapat sejumlah pemandian air panas di Bali, sekaligus menawarkan 
-                        sebuah pemandangan indah yang memanjakan dan memikat mata pengunjungnya, selain bisa menyegarkan tubuh juga menrefresh pikiran anda,
-                        melepaskan segala penat, menenggelamkan kejenuhan, sehingga menambah kesegaran tubuh untuk aktifitas berikutnya.
-                        Batur Natural Hot Spring di desa Toya Bungkah dikelola secara profesional oleh desa Pekraman Batur, sehingga anda
-                        bisa merasa nyaman, aman dan tenang untuk berada di lokasi, walaupun untuk masuk ke tempat pemandian ini dikenakan tiket masuk,
-                        hanya sebesar Rp 60.000/orang/WNI, harga tiket ini cukup masuk akal apalagi dengan berbagai fasilitas yang di dapatkan pengunjung seperti welcome drink, sampo, sabun dan handuk.
-                        Sehingga pemandian di desa Toya Bungkah menjadi tempat lebih ideal untuk berendam dibandingkan di tempat pemandian umum.
-                    </p><br>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Data Pengunjung-->
-            <section class="resume-section" id="userdatapengunjung">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">User Data Pengunjung</h2>
-            <?php
-            $tampil = mysqli_query($conn,"SELECT * FROM datapengunjung")
-            ?>
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-                <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-                <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-            </head>
-            <body>
-            <div class="container">
-            <table class="table table-dark table-hover">
-                <head>
-                <tr>
-                    <th class="text-center">No</th>
-                    <th class="text-center">Nama</th>
-                    <th class="text-center">Alamat</th>
-                    <th class="text-center">No.Telepon</th>
-                    <th class="text-center">Email</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php
-                $no=1;
-                while($r=mysqli_fetch_array($tampil)){
-                    echo 
-                    "<tr>
-                        <td>$no</td>
-                        <td >$r[nama]</td>
-                        <td>$r[alamat]</td>
-                        <td>$r[notelepon]</td>
-                        <td>$r[email]</td>
-                </tr>";
-                $no++;
-                }
-                ?>
-    </tbody>
-  </table>
-  <p><a href ="logout.php"><button type="button" class="btn btn-primary">Logout</button></p></a>
-</div>
-</body>
-</html>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+             <p>Camping</p>
+            <div class="progress">
+              <div class="determinate" style="width: 80%"></div>
+            </div>
+            <p>Hot Spring</p>
+            <div class="progress">
+              <div class="determinate" style="width: 70%"></div>
+            </div>
+            <p>Restoran</p>
+            <div class="progress">
+              <div class="determinate" style="width: 55%"></div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </section>
+    <!-- Facilitas -->
+    <section class="Facilitas" id="Facilitas">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Facilitas</h3>
+          <div class="col m4 s12">
+          <div class="card-panel center">
+            <i class=" material-icons medium">whatshot</i>
+            <h5>Hot Spring</h5>
+            <p>Disini kita melayani hot spring untuk pengunjung agar bisa berenang menggunakan air panas. Air yang keluar suhunya di atas 37 °C,
+               namun sebagian mata air panas mengeluarkan air bersuhu hingga di atas titik didih. </p>
+        </div>
+      </div>
+      <div class="col m4 s12">
+          <div class="card-panel center">
+            <i class=" material-icons medium">details</i>
+            <h5>Tenda</h5>
+            <p> tenda ini berfungsi untuk melindungi para pengunjung dari cuaca yang tidak di inginkan. Sehingga anda dapat melangsungkan
+               acara tanpa adanya gangguan,dan sebagai penanda jika akan ada acara tertentu di daerah tersebut. 
+              </p>
+        </div>
+      </div>
+      <div class="col m4 s12">
+          <div class="card-panel center">
+            <i class=" material-icons medium">local_parking</i>
+            <h5>Tempat Parkir</h5>
+            <p>Fasilitas parkir bertujuan untuk memberikan tempat istirahat kendaraan dan menunjang kelancaran arus lalu lintas. 
+              Pada kota-kota besar area parkir merupakan suatu kebutuhan bagi pemilik kendaraan. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- porfolio -->
+    <section id="Porfolio"class="Portfolio">
+      <div class="container">
+        <h3 class="light center grey-text text-darken-3">Portfolio</h3>
+         <div class="row">
+          <div class="col m4 s12">
+            <img src="img/portfolio/1.jpg"class="responsive-img materialboxed">
+         </div>
+          <div class="row">
+          <div class="col m4 s12">
+            <img src="img/portfolio/2.jpg"class="responsive-img materialboxed">
+         </div>
+          <div class="row">
+          <div class="col m4 s12">
+            <img src="img/portfolio/3.jpg"class="responsive-img materialboxed">
+         </div>
+         <div class="row">
+          <div class="col m6 s12">
+            <img src="img/portfolio/4.jpg"class="responsive-img materialboxed">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="Contactus"class="Contactus">
+      <div class="container">
+        <h3 class="light grey-text text-darken-3 center">Contact Us</h3>
+        <div class="row">
+          <div class="col m6 s12">
+            <div class="card-panel blue darken-2 center white-text">
+              <i class="material-icons">email</i>
+              <h5>Boxing Villa</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <ul class="collection with-header">
+            <li class="collection-header"><h4>Toya Bungkah</h4></li>
+              <li class="collection-header"><h4>Batur Tengah,Kabupaten bangli</h4></li>
+            </ul>
+        </div>
+
+        <div class="col m5 s12">
+          <form>
+            <div class="card-panel">
+              <h5>Please fill Out this form</h5>
+              <div class="input-field">
+                <input type="text"name="name" id="name">
+                <label for="name">Nama</label>
+            </div>
+            <div class="input-field">
+              <input type="email"name="email"id="email">
+              <label for ="email">Email</label>
+             </div>
+            <div class="input-field">
+              <input type="text"name="phone"id="phone">
+              <label for ="phone">Phone Number</label>
+             </div>
+            </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script>
+         const sideNav=document.querySelectorAll('.sidenav');
+         M.Sidenav.init(sideNav);
+
+         const slider=document.querySelectorAll('.slider');
+         M.Slider.init(slider,{
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+         });
+
+         const parallax = document.querySelectorAll('.parallax');
+         M.Parallax.init(parallax);
+
+         const materialbox = document.querySelectorAll('.materialboxed');
+         M.materialbox.init(materialboxed)
+
+
+      </script>
     </body>
-</html>
+  </html>
 
